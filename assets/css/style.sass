@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:400,500,700&display=swap')
+html, body
+    margin: 0
+    padding: 0
+    font-size: 13px
+body
+    background: #f0f0f0
+    font-family: 'Yantramanav'
+#wrapper
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .container
+        background: white
+        padding: 1.75em
+        border-radius: 5px
+        box-shadow: 7px 7px 18px -5px rgba(0, 0, 0, 0.7)
+#search_form
+    display: flex
+    input, button
+        padding: 0.7em
+        font-size: 13px
+        border: 1px solid #d8d8d8
+        border-radius: 5px
+    input
+        flex: 1 1 auto
+        min-width: 250px
+        font-weight: 500
+        margin-right: 0.5em
+    button
+        font-weight: 700
+        color: #444
+        background: rgba(255,255,255,1)
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8', GradientType=0 )
+        transition: 0.1s
+        &:hover
+            background: rgb(230,230,230)
+#result
+    display: none
+    margin-top: 1em
+    #error
+        background: rgb(249, 222, 222)
+        color: rgb(130, 18, 24)
+        padding: 1em
+        border: 1px solid rgba(130, 18, 24, 0.2)
+        border-radius: 5px
+        font-size: 15px
+    #success
+        .header
+            display: flex
+            img
+                width: 73px
+                height: 73px
+            .userInfo
+                margin-left: 1em
+                *
+                    margin: 0
+                    color:  rgb(60, 60, 60)
+                h5
+                    font-weight: 400
+                    font-style: italic
+                    font-size: 14px
+                h2
+                    font-weight: 700
+                    font-size: 34px
+                    line-height: 36px
+                span
+                    font-size: 14px
+        .repositories 
+            h4
+                font-size: 19px
+                color: rgb(60, 60, 60)
+                border-bottom: 2px solid rgb(120, 120, 120)
+                margin: 0
+                margin-top: 0.75em
+                padding-bottom: 0.3em
+            #example
+                display: none
+        #reposContainer
+            overflow: auto
+            max-height: 235px
+            .repo
+                display: flex
+                justify-content: space-between
+                align-items: center
+                border-bottom: 1px solid #d8d8d8
+                padding: 1em
+                h3
+                    margin: 0
+                    font-size: 19px
+                .icons
+                    display: flex
+                    font-size: 13px
+                    align-items: center
+                    .iconContainer
+                        margin-left: 3px
+                        display: flex
+                        align-items: flex-end
+                        span
+                            margin-left: 3px
+                            line-height: 10px

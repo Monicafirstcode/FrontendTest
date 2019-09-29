@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+    <link rel='stylesheet' href='/assets/css/style.min.css'>
+</head>
+<body>
+    <div id='wrapper'>
+        <div class='container'>
+            <form action='https://api.github.com/users/' id='search_form'>
+                <input type='text' placeholder='Search username...' required>
+                <button type='submit'>Search</button>
+            </form>
+            <div id="result">
+                <div id="success">
+                    <div class="header">
+                        <img id='userImg' src="" alt="">
+                        <div class="userInfo">
+                            <h5 id="userName">
+                            </h5>
+                            <h2 id="fullName">
+                            </h2>
+                            <span id="bio">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="repositories">
+                        <h4>Repositories</h4>
+                        <div id="example">
+                            <div class="repo">
+                                <h3></h3>
+                                <div class="icons">
+                                    <div class="stars iconContainer">
+                                        <img src="/assets/star.svg" alt="">
+                                        <span></span>
+                                    </div>
+                                    <div class="fork iconContainer">
+                                        <img src="/assets/repo-forked.svg" alt="">
+                                        <span></span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </div>
+                        <div id="reposContainer">
+                        </div>
+                    </div>
+                </div>
+                <div id="error">
+                    Does not exist
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='/assets/js/script.js'></script>
+    
+</body>
+</html>
